@@ -41,7 +41,7 @@ values are specified as -v {value}. Example command line requests:
 3. set request: -t set -k name -v "John Smith" (set request to set the value of the key 
 "name" to "John Smith" in the database. Set request is used to add new key-value pairs or 
 replace the value of an existing key)
--t delete -k name (delete the key "name" and its associated value)
+4. delete request: -t delete -k name (delete the key "name" and its associated value)
 
 In all cases, the client code formulates the command line requests into standard JSON
 requests. The formatted client requests becomes the following:
