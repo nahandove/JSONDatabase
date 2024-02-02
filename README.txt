@@ -5,7 +5,8 @@ JSON strings supplied by the client. Clients can also request to read, update, a
 specific JSON values stored in the server database.
 
 This appliction makes use of the Client-Server architecture, and the server and client
-communicate with each other via JSON. The server is able to process requests from multiple clients via multithreading and the use of ReadWriteLocks for reading client request files and
+communicate with each other via JSON. The server is able to process requests from multiple clients
+via multithreading and the use of ReadWriteLocks for reading client request files and
 writing JSON data to the database. Gson (https://github.com/janbodnar/Java-Gson-Examples) is
 used to parse JSON requests.  
 
@@ -26,7 +27,8 @@ strings. For details, please refer to the section -- Client Request Files.
 
 -- Client Command Line Requests
 
-The client can make requests directly from the command line. Four request types are permitted: get, set, delete, and end. To specify the request type, include -t {request type}
+The client can make requests directly from the command line. Four request types are permitted: 
+get, set, delete, and end. To specify the request type, include -t {request type}
 in the command line argument, e.g. -t get. For the end request, no other argument is needed.
 For the get and delete requests, a request key must be included, and for set requests, both
 the key and the value must be supplied.
